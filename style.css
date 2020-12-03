@@ -1,70 +1,86 @@
-.container{
+.container {
   width: 100%;
-  background-color:green;
+  background-color: green;
 }
-.conte{
+.content-block {
   display: inline-block;
-  width: 400px;
-  border-radius:5%;
-  margin: 10px 60px;
+  width: 310px;
+  border-radius: 5%;
+  margin: 10px 10px;
   position: relative;
-  overflow:hidden; 
-  padding: 20px 20px
+  overflow: hidden;
+  padding: 20px 40px;
+  font-family: sans-serif;
 }
-.mrg{
+.content-block > .indent {
   margin-bottom: 40px;
+  margin-top: 20px;
+  font-size: 20px;
 }
-.www{
-  margin-bottom: 100px;
+.bottom-margin {
+  margin-bottom: 70px;
 }
-.cont1{
-  background: linear-gradient(340deg, rgba(254,136,150,1) 50%, rgba(254,185,152,1) 61%);;
-
+.content-block > .bottom-content {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
-.cont2{
-  background: linear-gradient(340deg, rgba(38,151,229,1) 50%, rgba(130,195,246,1) 61%);
+.cont1 {
+  background: linear-gradient(
+    340deg,
+    rgba(254, 136, 150, 1) 50%,
+    rgba(254, 185, 152, 1) 61%
+  );
 }
-.cont3{
-  background: linear-gradient(340deg, rgba(119,216,207,1) 50%, rgba(21,209,188,1) 61%);
-
+.cont2 {
+  background: linear-gradient(
+    340deg,
+    rgba(38, 151, 229, 1) 50%,
+    rgba(130, 195, 246, 1) 61%
+  );
+  margin-right: 40px;
+  margin-left: 40px;
 }
-.content{
+.cont3 {
+  background: linear-gradient(
+    340deg,
+    rgba(119, 216, 207, 1) 50%,
+    rgba(21, 209, 188, 1) 61%
+  );
+}
+.content {
   color: white;
   font-size: 28px;
 }
 
-
-.conte::after,
-.conte::before{
-content:'';
-background-color: white; 
-padding: 100px;
-position: absolute;
-border-radius: 50%;
-opacity: 30%;
+.content-block::after,
+.content-block::before {
+  content: "";
+  background-color: white;
+  padding: 100px;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.4;
 }
-.conte::after{
-  top: 60%;
+.content-block::after {
+  top: 50%;
+  left: 60%;
+}
+.content-block::before {
+  bottom: 40%;
   left: 70%;
-}
-.conte::before{
-  top: 0%;
-  left: 80%;
 }
 .images::after,
 .image2::after,
-.image3::after{
+.image3::after {
   position: absolute;
-  left: 80%;
+  left: 90%;
 }
-.images::after{
-  content:url('../images/1.svg');
+.images::after {
+  content: url("images/1.svg");
 }
-.image2::after{
-  content:url('../images/2.svg');
+.image2::after {
+  content: url("images/2.svg");
 }
-.image3::after{
-  content:url('../images/3.svg');
+.image3::after {
+  content: url("images/3.svg");
 }
-
-
